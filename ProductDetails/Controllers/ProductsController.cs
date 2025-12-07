@@ -46,7 +46,7 @@ namespace ProductDetails.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteCategory(int id)
+        public async Task<ActionResult> DeleteProduct(int id)
         {
             var delete = await _db.Categories.FindAsync(id);
             if (delete == null)
